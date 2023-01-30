@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300&family=MedievalSharp&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/564x/de/49/df/de49dfc936514b18ce07b61eaa093ff0.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(117, 20, 20);
+}
+
+ul li {
+  list-style-type: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "MedievalSharp", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(117, 20, 20);
+  background-color: rgb(31, 29, 29);
+  padding: 20px;
+}
+
+h2, h3 {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-size: 23px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3 1px;
+  margin: 10px 10px 10px 30px;
+}
+
+body {
+  background-color: rgb(200, 161, 161);
+}
+
+footer {
+  padding: 40px;
+  margin-top: 40px;
+  background-color: rgb(158, 149, 149);
+}
+
+.navegador {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sacrificio {
+  margin-left: 20px;
+}
+
+.guts_img {
+  width: 280px;
+  height: 380px;
+  margin-left: 30px;
+}
+
+.card {
+  margin-left: 15px;
+  width: 12rem;
+}
+
+.card-body {
+  font-family: "Bebas Neue", cursive;
+  font-size: 23px;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  padding-right: 19px;
+  object-fit: cover;
+}
+
+.spotify {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.deathmetal {
+  width: 320px;
+  height: 200px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.gallery {
+  border: 5px solid rgb(77, 59, 59);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paneles {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(https://images7.alphacoders.com/821/821395.png);
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(117, 20, 20);
+  }
+  ul li {
+    list-style-type: none;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 40px;
+  }
+  h1 {
+    font-family: "MedievalSharp", cursive;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(117, 20, 20);
+    background-color: rgb(31, 29, 29);
+    padding: 50px;
+  }
+  h2, h3 {
+    font-family: "Bebas Neue", cursive;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    margin-left: 50px;
+  }
+  p {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+  }
+  h2 {
+    padding-left: 450px;
+  }
+  footer {
+    padding: 40px;
+    margin-top: 40px;
+    background-color: rgb(158, 149, 149);
+  }
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .sacrificio {
+    border: none;
+    margin-top: 30px;
+  }
+  .guts {
+    display: flex;
+    flex-direction: row;
+  }
+  .guts_img {
+    width: 400px;
+    height: 500px;
+  }
+  .publicidad {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .card {
+    margin-left: 40px;
+  }
+  .deathmetal {
+    width: 520px;
+    height: 276px;
+  }
+  .metal {
+    margin-left: 40px;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .guerrero_negro img {
+    width: 262px;
+    height: 286px;
+    margin: 20px 40px 20px 40px;
+  }
+  #oro img {
+    width: 200px;
+    height: 250px;
+    margin: 10px 10px 10px 10px;
+  }
+  #condena img {
+    width: 244px;
+    height: 264px;
+    margin: 1px 10px 13px 4px;
+  }
+  .halcon img {
+    width: 200px;
+    height: 250px;
+    margin: 10px 10px 10px 10px;
+  }
+  .fantasia img {
+    width: 200px;
+    height: 250px;
+    margin: 10px 10px 10px 10px;
+  }
+  .saga1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .saga2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .saga3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .saga4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .saga5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .video {
+    margin-left: 40px;
+  }
+  .pj {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .animacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .paneles {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 5vw);
+    gap: 10px;
+  }
+  .gallery {
+    width: 100%;
+    height: 100%;
+    border: solid black;
+    object-fit: cover;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+  .trans:hover {
+    transform: scale(2);
+  }
+  .griffith {
+    grid-column: 2/7;
+    grid-row: 1/6;
+  }
+  .casca {
+    grid-column: 7/10;
+    grid-row: 7/11;
+  }
+  .batallando {
+    grid-column: 7/12;
+    grid-row: 1/4;
+  }
+  .dios {
+    grid-column: 7/10;
+    grid-row: 4/7;
+  }
+  .skull {
+    grid-column: 10/12;
+    grid-row: 4/6;
+  }
+  .ogros {
+    grid-column: 2/7;
+    grid-row: 6/11;
+  }
+  .berserker {
+    grid-column: 10/12;
+    grid-row: 6/11;
+  }
+}/*# sourceMappingURL=estilos.css.map */
