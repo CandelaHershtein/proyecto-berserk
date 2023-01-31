@@ -1,145 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300&family=MedievalSharp&display=swap");
-* {
-  margin: 0;
-  padding: 0%;
+.navegador {
+  margin-top: 40px;
 }
-
-body {
-  background-image: url(https://i.pinimg.com/564x/de/49/df/de49dfc936514b18ce07b61eaa093ff0.jpg);
-}
-
-a {
-  text-decoration: none;
-  color: rgb(117, 20, 20);
-}
-
-ul li {
+.navegador ul {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (min-width: 1024px) {
+  .navegador ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.navegador ul div {
+  margin-left: 20px;
+}
+@media (min-width: 1024px) {
+  .navegador ul div {
+    margin-top: 40px;
+  }
+}
+.navegador ul li {
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
   letter-spacing: 2px;
   padding: 10px;
 }
-
-h1 {
-  font-family: "MedievalSharp", cursive;
-  font-size: 30px;
-  text-align: center;
+@media (min-width: 1024px) {
+  .navegador ul li {
+    font-family: "Bebas Neue", cursive;
+    font-size: 35px;
+    letter-spacing: 3px;
+    padding: 40px;
+  }
+}
+.navegador ul li a {
+  text-decoration: none;
   color: rgb(117, 20, 20);
-  background-color: rgb(31, 29, 29);
-  padding: 20px;
 }
 
-h2, h3 {
-  font-family: "Bebas Neue", cursive;
-  font-style: normal;
-  font-size: 23px;
-  letter-spacing: 3px;
+@media (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0%;
+  }
+  body {
+    background-image: url(https://i.pinimg.com/564x/de/49/df/de49dfc936514b18ce07b61eaa093ff0.jpg);
+  }
+  h1 {
+    font-family: "MedievalSharp", cursive;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(234, 170, 133);
+    background-color: rgb(117, 20, 20);
+    padding: 20px;
+  }
+  h2, h3 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: rgb(234, 170, 133);
+  }
+  p {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(234, 170, 133);
+  }
+  footer {
+    padding: 40px;
+    margin-top: 40px;
+    background-color: rgb(158, 149, 149);
+  }
+  .guts_img {
+    width: 18rem;
+  }
+  .guts {
+    margin-left: 15px;
+  }
+  .card {
+    margin-left: 15px;
+    width: 12rem;
+  }
+  .card-body {
+    font-family: "Bebas Neue", cursive;
+    font-size: 23px;
+    text-align: center;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 100%;
+    padding-right: 19px;
+    object-fit: cover;
+  }
+  .metal {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .deathmetal {
+    width: 350px;
+    height: 250px;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .gallery {
+    border: 5px solid rgb(77, 59, 59);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .paneles {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
-
-h2 {
-  margin-top: 10px;
-  margin-left: 40px;
-}
-
-p {
-  font-family: "Kanit", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 3 1px;
-  margin: 10px 10px 10px 30px;
-}
-
-body {
-  background-color: rgb(200, 161, 161);
-}
-
-footer {
-  padding: 40px;
-  margin-top: 40px;
-  background-color: rgb(158, 149, 149);
-}
-
-.navegador {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.sacrificio {
-  margin-left: 20px;
-}
-
-.guts_img {
-  width: 280px;
-  height: 380px;
-  margin-left: 30px;
-}
-
-.card {
-  margin-left: 15px;
-  width: 12rem;
-}
-
-.card-body {
-  font-family: "Bebas Neue", cursive;
-  font-size: 23px;
-  text-align: center;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  padding-right: 19px;
-  object-fit: cover;
-}
-
-.spotify {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-left: 10px;
-}
-
-.deathmetal {
-  width: 320px;
-  height: 200px;
-}
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-
-.gallery {
-  border: 5px solid rgb(77, 59, 59);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.paneles {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 @media (min-width: 1024px) {
   body {
     background-image: url(https://images7.alphacoders.com/821/821395.png);
     width: 100%;
     height: 100%;
-  }
-  a {
-    text-decoration: none;
-    color: rgb(117, 20, 20);
-  }
-  ul li {
-    list-style-type: none;
-    font-family: "Bebas Neue", cursive;
-    font-size: 30px;
-    letter-spacing: 3px;
-    padding: 40px;
   }
   h1 {
     font-family: "MedievalSharp", cursive;
@@ -152,11 +138,10 @@ footer {
   h2, h3 {
     font-family: "Bebas Neue", cursive;
     font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
+    font-size: 40px;
+    color: rgb(117, 20, 20);
+    text-align: center;
     letter-spacing: 3px;
-    margin-top: 25px;
-    margin-left: 50px;
   }
   p {
     font-family: "Kanit", sans-serif;
@@ -167,45 +152,41 @@ footer {
     padding-right: 50px;
     margin-top: 30px;
   }
-  h2 {
-    padding-left: 450px;
-  }
   footer {
     padding: 40px;
     margin-top: 40px;
     background-color: rgb(158, 149, 149);
   }
-  .navegador {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .sacrificio {
-    border: none;
-    margin-top: 30px;
-  }
   .guts {
-    display: flex;
-    flex-direction: row;
+    margin-left: 100px;
   }
   .guts_img {
-    width: 400px;
-    height: 500px;
+    float: left;
+    padding-right: 10px;
+    width: 500px;
+    height: 600px;
   }
-  .publicidad {
+  .guts_p {
+    font-size: 30px;
+    background-color: rgb(120, 55, 82);
+    padding: 100px;
+    border: 10px solid black;
+  }
+  .aside {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
   }
   .card {
     margin-left: 40px;
   }
   .deathmetal {
-    width: 520px;
-    height: 276px;
+    width: 664px;
+    height: 403px;
   }
   .metal {
-    margin-left: 40px;
+    margin-top: 30px;
+    text-align: center;
   }
   .redes {
     display: flex;
@@ -314,5 +295,9 @@ footer {
   .berserker {
     grid-column: 10/12;
     grid-row: 6/11;
+  }
+  .kentaro {
+    width: 500px;
+    height: 300px;
   }
 }/*# sourceMappingURL=estilos.css.map */

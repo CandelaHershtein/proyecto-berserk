@@ -1,0 +1,41 @@
+.navegador{
+    margin-top: 40px;
+    
+    ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        }
+
+        div{
+            margin-left: 20px;
+            @media (min-width: 1024px){
+            margin-top: 40px;
+            }
+        }
+        li {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 25px;
+            letter-spacing: 2px;
+            padding: 10px;
+            @media (min-width: 1024px){
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+            letter-spacing: 3px;
+            padding: 40px;
+            }
+        
+            a{
+                text-decoration: none;
+                color: rgb(117, 20, 20);
+            }
+        
+            
+        }
+    }
+}
+
