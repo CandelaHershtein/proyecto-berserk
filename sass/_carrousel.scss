@@ -1,0 +1,37 @@
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.kentaro {
+
+    @media (min-width: 320px) {
+    @include sizes(300px, 200px);
+    object-fit: cover;
+
+    } 
+    @media (min-width: 450px) {
+    @include sizes(300px, 300px);
+    } 
+
+    @media (min-width: 550px) {
+    @include sizes(300px, 400px);
+    } 
+
+    @media (min-width: 700px) {
+    @include sizes(500px, 600px);
+    } 
+
+    @media (min-width: 1024px) {
+    @include sizes(100%, 600px);
+    } 
+
+    @media (min-width: 1200px) {
+    @include sizes(100%, 800px);
+    } 
+
+    @media (min-width: 1400px) {
+    @include sizes(100%, 600px);
+    margin-top: 80px;
+    } 
+}

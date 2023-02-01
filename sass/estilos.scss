@@ -1,4 +1,5 @@
 @import "nav";
+@import "carrousel";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300&family=MedievalSharp&display=swap');
 
@@ -28,6 +29,8 @@ h2, h3{
     text-align: center;
     letter-spacing: 3px;
     color: rgb(234, 170, 133);
+    padding-bottom: 20px;
+    padding-top: 40px;
 
 }
 
@@ -54,7 +57,7 @@ footer{
 
 .card{
     margin-left: 15px;
-    width: 12rem;
+
 }
 .card-body{
     font-family: 'Bebas Neue', cursive;
@@ -84,6 +87,33 @@ footer{
     justify-content: end;
 }
 
+.tomo img{
+    object-fit: cover;
+    width: 258px;
+    height: 293px;
+    margin: 10px 10px 10px 20px;
+}
+
+.saga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.animacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.pj{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .gallery{
     border: 5px solid rgb(77, 59, 59);
     width: 100%;
@@ -97,6 +127,7 @@ footer{
 }
 
 }
+
 
 @media(min-width:1024px){
 
@@ -123,6 +154,8 @@ footer{
         color: rgb(117, 20, 20);
         text-align: center;
         letter-spacing: 3px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     
     }
     
@@ -152,14 +185,15 @@ footer{
         float: left;
         padding-right: 10px;
         width: 500px;
-        height: 600px;
+        height: 650px;
     }
     .guts_p{
         font-size: 30px;
         background-color: rgb(120, 55, 82);
-        padding: 100px;
+        padding: 80px;
         border: 10px solid black;
     }
+
     .aside{
         margin-top: 50px;
         display: grid;
@@ -168,6 +202,12 @@ footer{
     
     .card{
         margin-left: 40px;
+    }
+
+    .card-body{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 60px;
+        text-align: center;
     }
 
     .deathmetal {
@@ -186,70 +226,28 @@ footer{
         justify-content: end;
     }
 
-    .guerrero_negro img{
-        width: 262px;
-        height: 286px;
-        margin: 20px 40px 20px 40px;
-    }
 
 
-
-
-    #oro img{
-        width: 200px;
-        height: 250px;
+    .tomo img{
+        object-fit: cover;
+        width: 258px;
+        height: 293px;
         margin: 10px 10px 10px 10px;
     }
 
-    #condena img{
-        width: 244px;
-        height: 264px;
-        margin: 1px 10px 13px 4px;
-    }
-
-    .halcon img{
-        width: 200px;
-        height: 250px;
-        margin: 10px 10px 10px 10px;
-    }
-
-    .fantasia img{
-        width: 200px;
-        height: 250px;
-        margin: 10px 10px 10px 10px;
-    }
-
-    .saga1{
+    .saga{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+        flex-direction: column;
+        align-items: center;
 
-    .saga2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;    
     }
-
-    .saga3{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    }
-
-    .saga4{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    }
-
-    .saga5{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    }
-
 
 
     .video{
-        margin-left: 40px;
+        width: 700px;
+        height: 389px;
     }
+
 
     .pj{
         width: 100%;
@@ -312,10 +310,5 @@ footer{
         grid-column: 10/12;
         grid-row: 6/11;
     }
-
-
-    .kentaro{
-        width: 500px;
-        height: 300px;
-    }
+    
 }
