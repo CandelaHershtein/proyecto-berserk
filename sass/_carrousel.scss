@@ -31,7 +31,6 @@
     } 
 
     @media (min-width: 1400px) {
-    @include sizes(100%, 600px);
-    margin-top: 80px;
+    @include sizes(100%, 1000px);
     } 
 }

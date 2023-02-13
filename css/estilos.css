@@ -80,9 +80,8 @@
 }
 @media (min-width: 1400px) {
   .kentaro {
-    height: 600px;
+    height: 1000px;
     width: 100%;
-    margin-top: 80px;
   }
 }
 
@@ -113,7 +112,7 @@
   }
   p {
     font-family: "Kanit", sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: 1px;
     color: rgb(234, 170, 133);
   }
@@ -124,57 +123,66 @@
   }
   .guts_img {
     width: 18rem;
+    float: left;
+    margin-right: 30px;
   }
   .guts {
     margin-left: 15px;
+    margin-right: 15px;
   }
-  .card {
-    margin-left: 15px;
-  }
-  .card-body {
-    font-family: "Bebas Neue", cursive;
-    font-size: 23px;
-    text-align: center;
-  }
-  .card-img-top {
-    width: 100%;
-    height: 100%;
-    padding-right: 19px;
-    object-fit: cover;
+  .guts_p {
+    padding: 40px;
+    background-color: rgb(139, 33, 33);
   }
   .metal {
+    padding-top: 100px;
     text-align: center;
     margin-top: 15px;
+  }
+  .spotify {
+    background-color: rgb(54, 48, 48);
   }
   .deathmetal {
     width: 350px;
     height: 250px;
+    border: solid 6px rgb(143, 140, 140);
   }
   .redes {
     display: flex;
     flex-direction: row;
     justify-content: end;
   }
-  .tomo img {
-    object-fit: cover;
-    width: 258px;
-    height: 293px;
-    margin: 10px 10px 10px 20px;
+  .tomos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
   .saga {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    width: 18rem;
+    height: 64.5rem;
+    border: solid black;
+    margin-bottom: 50px;
+    background-color: #b99898;
+  }
+  .saga img {
+    height: 45%;
+    object-fit: cover;
+  }
+  .card-title {
+    margin-bottom: 15px;
+  }
+  .card-text {
+    color: black;
   }
   .animacion {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
     padding: 10px;
   }
   .pj {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
   }
   .gallery {
@@ -187,6 +195,29 @@
     margin: 20px;
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 500px) and (max-width: 1300px) {
+  .deathmetal {
+    width: 400px;
+    height: 323px;
+  }
+  .tomos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+  .saga {
+    width: 26rem;
+    height: 73rem;
+    border: solid black;
+    margin-bottom: 50px;
+    background-color: #b99898;
+  }
+  .saga img {
+    height: 64%;
+    object-fit: cover;
   }
 }
 @media (min-width: 1024px) {
@@ -218,14 +249,19 @@
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 3px;
-    padding-left: 50px;
-    padding-right: 50px;
     margin-top: 30px;
   }
   footer {
     padding: 40px;
     margin-top: 40px;
     background-color: rgb(158, 149, 149);
+  }
+  .aside {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .padding {
+    padding: 100px;
   }
   .guts {
     margin-left: 100px;
@@ -237,29 +273,18 @@
     height: 650px;
   }
   .guts_p {
+    line-height: 33px;
     font-size: 30px;
     background-color: rgb(120, 55, 82);
-    padding: 80px;
+    padding: 30px;
     border: 10px solid black;
-  }
-  .aside {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .card {
-    margin-left: 40px;
-  }
-  .card-body {
-    font-family: "Bebas Neue", cursive;
-    font-size: 60px;
-    text-align: center;
   }
   .deathmetal {
     width: 664px;
     height: 403px;
   }
   .metal {
+    padding-top: 100px;
     margin-top: 30px;
     text-align: center;
   }
@@ -267,17 +292,6 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-  }
-  .tomo img {
-    object-fit: cover;
-    width: 258px;
-    height: 293px;
-    margin: 10px 10px 10px 10px;
-  }
-  .saga {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .video {
     width: 700px;
@@ -336,5 +350,44 @@
   .berserker {
     grid-column: 10/12;
     grid-row: 6/11;
+  }
+}
+@media (min-width: 1300px) {
+  .tomos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    padding: 100px;
+  }
+  .saga {
+    width: 180%;
+    height: 99%;
+    border: solid black;
+    background-color: #b99898;
+  }
+  .saga img {
+    height: 57%;
+    object-fit: cover;
+  }
+  .saga1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .saga2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .saga3 {
+    grid-column: 5/6;
+    grid-row: 1/3;
+  }
+  .saga4 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .saga5 {
+    grid-column: 4/5;
+    grid-row: 3/5;
   }
 }/*# sourceMappingURL=estilos.css.map */
